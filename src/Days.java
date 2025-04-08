@@ -1,4 +1,4 @@
-public class days {
+public class Days {
     public static void main(String[] args) {
         int days = 5000;
         int years = 5000 / 365;
