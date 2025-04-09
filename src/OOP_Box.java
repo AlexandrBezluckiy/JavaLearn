@@ -21,4 +21,8 @@ public class OOP_Box {
         this.width = size;
         this.height = size;
     }
+
+    public double get_volume (OOP_Box box) {
+        return box.length * box.height * box.width;
+    }
 }
