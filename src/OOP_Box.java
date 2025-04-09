@@ -15,4 +15,10 @@ public class OOP_Box {
         this.width = width;
         this.height = height;
     }
+
+    OOP_Box(double size) {
+        this.length = size;
+        this.width = size;
+        this.height = size;
+    }
 }
