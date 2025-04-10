@@ -20,6 +20,7 @@ public class OOP_First {
         volume = my_box3.height * my_box3.width * my_box3.length;
         System.out.println("My_box3: " + volume);
 
+// Создадим массив из объектов и для каждого объекта в массиве вычислим объем.
         OOP_Box[] arr = new OOP_Box[3];
         arr[0] = my_box1;
         arr[1] = my_box2;
