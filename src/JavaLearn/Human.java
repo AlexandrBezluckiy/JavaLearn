@@ -5,6 +5,12 @@ public class Human {
     int age;
     double weight;
 
+    public Human() {
+        this.name = "";
+        this.age = 0;
+        this.weight = 0;
+    }
+
     Human(String name, int age, double weight) {
         this.name = name;
         this.age = age;
