@@ -19,6 +19,10 @@ public class OOP_Obj_as_Param3 {
                 break;
             case -1:
                 System.out.println("Вторая коробка больше.");
+                break;
+            default:
+                System.out.println("Какие коробки?");
+                break;
         }
     }
 }
