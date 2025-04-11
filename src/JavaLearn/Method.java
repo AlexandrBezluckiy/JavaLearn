@@ -13,4 +13,12 @@ public class Method {
         double res = (a + b + c + d) / 4;
         return res;
     }
+    public static double calc_mid(double... args) {
+        double res = 0;
+        for (int i = 0; i < args.length; i++) {
+            res += args[i];
+        }
+        res = res / args.length;
+        return res;
+    }
 }
