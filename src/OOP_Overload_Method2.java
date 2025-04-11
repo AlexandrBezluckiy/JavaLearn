@@ -13,5 +13,7 @@ public class OOP_Overload_Method2 {
 
         Method2 box4 = new Method2(3, 3, 3);
         System.out.println(box4.value());
+
+        box4.set_size(15.1,15.1,15.1);
     }
 }

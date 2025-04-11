@@ -32,6 +32,11 @@ public class Method2 {
         this.length = length;
     }
 
+public void set_size(int height, int weight, int length) {
+        this.height = height;
+        this.weight = weight;
+        this.length = length;
+}
     public double value(){
         return height * weight * length;
     }
