@@ -8,8 +8,14 @@ public class OOP_Obj_as_Param2 {
         String out = ObjBox.volume_compare(box1, box2);
         System.out.println(out);
 
-        box2 = box2.resize_box(box1, 2);
-        System.out.println(box1 + "," + box2); // проверяем что это разные объекты;
+        box2 = box2.resize_box(box1, 0.3);
+
+        System.out.println(box1 + ", " + box2); // проверяем что это разные объекты;
+
+        System.out.println(ObjBox.show_param(box1));
         System.out.println(ObjBox.show_param(box2));
+
+        out = ObjBox.volume_compare(box1, box2);
+        System.out.println(out);
     }
 }
