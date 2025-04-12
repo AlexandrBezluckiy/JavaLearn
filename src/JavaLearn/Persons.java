@@ -9,7 +9,7 @@ public class Persons {
         newArr[newArr.length-1] = newName;
         return newArr;
     }
-
+/*
     public static String[] remove_staff(String[] arr, String remName) {
         int index = 0;
         for (int i = 0; i <arr.length; i++) {
@@ -26,5 +26,22 @@ public class Persons {
             newArr[i] = arr[i+shift];
         }
         return newArr;
+*/
+    public static String[] remove_staff(String[] arr, String remName) {
+        for (int i = 0; i < arr.length; i++ ) {
+            if (arr[i].equals(remName)) {
+                arr[i] = null;
+            }
+        }
+        String[] newArr = new String[arr.length - 1]; {
+            for (int i = 0, j = 0; i < newArr.length; i++, j++) {
+                if (arr[i] == null) {
+                    j++;
+                    continue;
+                }
+                newArr[i] = arr[j];
+            }
+            return newArr;
+        }
     }
 }
