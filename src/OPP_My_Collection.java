@@ -14,7 +14,7 @@ public class OPP_My_Collection {
 
         System.out.println("Вася выходит из чата.");
 
-        staff = Persons.remove_staff(staff, "Вася");
+        staff = Persons.remove_staff(staff, "Жанин");
         for (String s : staff) {
             System.out.println(s);
         }

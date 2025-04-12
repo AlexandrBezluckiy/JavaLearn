@@ -29,8 +29,14 @@ public class Persons {
 */
     public static String[] remove_staff(String[] arr, String remName) {
         for (int i = 0; i < arr.length; i++ ) {
+            int flg = 0;
             if (arr[i].equals(remName)) {
                 arr[i] = null;
+                break;
+            }
+            if ((i == arr.length-1)&&(!arr[i].equals(remName))) {
+                System.out.println("Нет такого.");
+                return arr;
             }
         }
         String[] newArr = new String[arr.length - 1]; {
