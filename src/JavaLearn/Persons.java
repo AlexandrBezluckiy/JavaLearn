@@ -35,9 +35,8 @@ public class Persons {
         }
         String[] newArr = new String[arr.length - 1]; {
             for (int i = 0, j = 0; i < newArr.length; i++, j++) {
-                if (arr[i] == null) {
+                if (arr[j] == null) {
                     j++;
-                    continue;
                 }
                 newArr[i] = arr[j];
             }
