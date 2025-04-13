@@ -1,6 +1,6 @@
 package JavaLearn;
 
-public class Figure {
+public abstract class Figure {
     private double a;
     private double b;
 
@@ -14,9 +14,7 @@ public class Figure {
         this.b = b;
     }
 
-    public double area() {
-        return a * b;
-    }
+    public abstract double area();
 
     public double getA() {
         return a;
