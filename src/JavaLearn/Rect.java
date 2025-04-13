@@ -14,4 +14,6 @@ public class Rect extends Figure {
     public double area() {
         return super.getA() * super.getB();
     }
+
+
 }

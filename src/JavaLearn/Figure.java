@@ -16,10 +16,10 @@ public abstract class Figure {
 
     public abstract double area();
 
-    public double getA() {
+    public final double getA() {
         return a;
     }
-    public double getB() {
+    public final double getB() {
         return b;
     }
 }
