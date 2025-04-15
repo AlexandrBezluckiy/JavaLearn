@@ -13,7 +13,8 @@ public class Box {
 
     @Override
     public String toString() {
-        String str = "Ширина: " + height + "\n" + "Высота: " + width + "\n" + "Длина: " + length;
+//        String str = "Ширина: " + width + "\n" + "Высота: " + height + "\n" + "Длина: " + length;
+        String str = String.format("Ширина: %s\nДлина: %s\nВысота: %s\n", width, height, length);
         return str;
     }
 }
