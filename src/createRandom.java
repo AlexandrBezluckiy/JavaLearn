@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class createRandom {
     public static void main(String[] args) {
@@ -10,5 +11,11 @@ public class createRandom {
         Random rand = new Random();
         int i = rand.nextInt(1, 10);
         System.out.println(i);
+
+// Просто пример ввода числа пользователем.
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введи число сам: ");
+        int num  = sc.nextInt();
+        System.out.println(num);
     }
 }
