@@ -1,6 +1,6 @@
 package Interfaces;
 
-public class Person implements Info {
+public class Person implements Info, Name {
     public String name;
 
     Person(String name) {
@@ -14,4 +14,10 @@ public class Person implements Info {
     public void showInfo() {
         System.out.println("My name is " + this.name);
     }
+
+    public void sayMyName() {
+        System.out.println("I'm " + this.name);
+    }
+
+
 }
