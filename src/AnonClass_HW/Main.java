@@ -5,5 +5,13 @@ public class Main {
         Director director = new Director();
         Buhgalter buh = new Buhgalter();
         director.force(buh, 5);
+
+        director.force(new Counter() {
+            @Override
+            public String report(int i) {
+                String out = ("Отчет за " + i + " месяцев.");
+                return out;
+            }
+        }, 7);
     }
 }
