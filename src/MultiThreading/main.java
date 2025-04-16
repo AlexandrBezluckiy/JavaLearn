@@ -15,6 +15,19 @@ public class main {
             }
         });
         timer.start();
+
+        Thread timer2 = new Thread(new Runnable() {
+            public void run() {
+                try {
+                    while (true) {
+                        System.out.println("Ку ку");
+                        Thread.sleep(500);
+                    }
+                } catch (InterruptedException e) {
+                }
+            }
+        });
+        timer2.start();
 /*
         for (int i = 0; i < 1000000; i++) {
             System.out.println("2");
